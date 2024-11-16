@@ -1,0 +1,137 @@
+
+
+
+.texto {
+    padding: 70px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Ajustar el tamaño de las imágenes y el contenedor en pantallas pequeñas */
+.image1 {
+    display: grid;
+    place-items: center;
+    height: auto;
+}
+
+.image1 img {
+    width: 100%;  /* Se adapta al ancho del contenedor */
+    max-width: 400px;  /* Máximo ancho para imágenes */
+    height: auto;
+}
+
+/* Párrafo centralizado */
+.Parrafo {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Imágenes dentro de instalaciones */
+.img-instalaciones {
+    display: grid;
+    place-items: center;
+    height: auto;
+}
+
+.img-instalaciones img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Estilo de la sección Instalaciones */
+.instalaciones {
+    padding: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: rgb(198, 124, 124);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Párrafo con un ancho más restringido */
+.Parrafo1 {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Imágenes del personal y equipo con border-radius */
+.img-personal, .img-equipo {
+    display: grid;
+    place-items: center;
+    height: auto;
+    border-radius: 10px;
+}
+
+.img-personal img, .img-equipo img {
+    width: 100%;
+    max-width: 190px;
+    height: auto;
+}
+
+/* Media Query para pantallas pequeñas (móviles) */
+@media (max-width: 600px) {
+    .texto {
+        font-size: 18px;
+        padding: 40px;
+    }
+
+    .instalaciones {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .Parrafo {
+        padding: 10px;
+    }
+
+    .Parrafo1 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .image1 img, .img-instalaciones img, .img-personal img, .img-equipo img {
+        max-width: 100%;  /* Imágenes se ajustan al 100% del contenedor */
+    }
+}
+
+/* Media Query para pantallas medianas (tabletas) */
+@media (max-width: 1024px) {
+    .texto {
+        font-size: 22px;
+        padding: 50px;
+    }
+
+    .instalaciones {
+        font-size: 22px;
+        padding: 25px;
+    }
+
+    .image1 img, .img-instalaciones img, .img-personal img, .img-equipo img {
+        max-width: 90%;  /* Las imágenes ocupan el 90% del contenedor */
+    }
+}
+
+/* Media Query para pantallas grandes (escritorios) */
+@media (min-width: 1025px) {
+    .texto {
+        font-size: 24px;
+        padding: 70px;
+    }
+
+    .instalaciones {
+        font-size: 24px;
+        padding: 30px;
+    }
+
+    .image1 img, .img-instalaciones img, .img-personal img, .img-equipo img {
+        max-width: 400px;  /* Imágenes mantienen un tamaño fijo en pantallas grandes */
+    }
+}
